@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+.btn{
+background-color:white; 
+padding: 10px 24px; 
+border: 2px solid blue;
+cursor:pointer;
+margin-top:20px;
+}
+.btn:hover{
+background-color: green;
+  color: white;
+}
+.btn1{
+background-color:white; 
+padding: 10px 24px; 
+border: 2px solid blue;
+cursor:pointer;
+margin:auto;
+}
+.btn1:hover{
+background-color: red;
+  color: white;
+}
+form{
+border: 3px solid white;
+width:60%;
+margin:auto;
+padding: 70px 0;
+text-align: center;
+font-size:27px;
+}
+
+input[type=email]{
+border:none;
+border-bottom: 2px solid green;
+padding-left: 22px;
+width:50%;
+}
+input[type=password]{
+border:none;
+border-bottom: 2px solid green;
+padding-left: 25px;
+width:50%;
+}
+
+</style>
+<script>
+function myfun(){
+if(dname=="dharneshmkceit@gmail.com" && pwd=="Dharnesh@123"){
+window.location="www.google.com"
+}
+}
+</script>
+</head>
+<body style="background-image:url(kd.jpg);
+background-repeat:no-repeat;
+ height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;">
+<h1 style="color:white;"align="center">Manager login</h1>
+<form align="center";>
+  <div class="form-field">
+	<label for="uname" style="padding-left:-50px;
+color:white;"><b>Username/Email: </b></label>
+    <input type="email" id="dname" placeholder="Email / Username" required/ style=" margin-top:20px; font-size:25px; font-family:times new roman;">
+  </div>
+  <div class="form-field">
+	<label for="password" style="color:white;"><b>Password: </b></label>
+    <input type="password" id="pwd" placeholder="Password" required/ style="margin-left:90px; margin-top:20px; font-size:25px; font-family:times new roman;">                       
+  </div>
+  <div class="form-field" style="margin:auto; padding-left:60px;">
+    <button class="btn" type="submit" style="font-size:20px; font-family:Lucida Handwriting;" onclick="myfun();">Log in</button>
+<button class="btn1" type="submit" style="font-size:20px; font-family:Lucida Handwriting;">Forgot password</button>
+  </div>
+</form>  
+</body>
+</html>
